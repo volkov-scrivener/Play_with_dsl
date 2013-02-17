@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Пирожки с картошкой</title>
+    <script type="text/javascript" src="cookingDsl.ru.js"></script>
+    <script type="text/javascript" src="patties_with_potatoes.ru.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+    function test() {
+        var dish = new Пирожки_с_картошкой();
+        dish.Приготовить();
+        document.getElementById("instruction").innerHTML = dish.GetInstruction();
+        document.getElementById("ingredients").innerHTML = dish.GetStore();
+    }
+</script>
+
+<input type="button" value="Пирожки с картошкой" id="testButton" onclick="test();"/>
+
+<h2>Рецепт</h2>
+<div id="instruction">
+
+</div>
+
+<h2>Ингредиенты</h2>
+<div id="ingredients">
+
+</div>
+
+</body>
+</html>

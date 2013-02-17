@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>patties with potatoes</title>
+    <script type="text/javascript" src="cookingDsl.js"></script>
+    <script type="text/javascript" src="patties_with_potatoes.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+    function test() {
+        var dish = new Patties_with_potatoes();
+        dish.Prepare();
+        document.getElementById("instruction").innerHTML = dish.GetInstruction();
+        document.getElementById("ingredients").innerHTML = dish.GetStore();
+    }
+</script>
+
+<input type="button" value="Prepare patties with potatoes" id="testButton" onclick="test();"/>
+
+<h2>Instructions</h2>
+<div id="instruction">
+
+</div>
+
+<h2>Ingredients</h2>
+<div id="ingredients">
+
+</div>
+
+</body>
+</html>
